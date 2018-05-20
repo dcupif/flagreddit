@@ -157,7 +157,7 @@ def write_to_csv(dataset, filename):
 
 
 # Retrieve data for about 3 years (3*365 = 1095 days) and save it to .csv file
-dataset = create_dataset(days=10)
+dataset = create_dataset(days=1095)
 dataset = preprocess(dataset)
 train_set, test_set = shuffle_and_split(dataset)
 write_to_csv(train_set, 'train.csv')
